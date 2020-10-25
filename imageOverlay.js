@@ -4,7 +4,7 @@ img = document.createElement('img');
 chrome.storage.local.get(['koekuva'],function(result){img.src=result.koekuva});
 chrome.storage.local.set({'koekuva':''},function(){console.log('filen alussa')});
 img.id='overlay';
-img.style.position = 'absolute';
+img.style.position = 'relative';
 img.style.top = 0;
 img.style.opacity= 0.7;
 document.body.appendChild(img);
